@@ -1,0 +1,20 @@
+package com.cts;
+
+class Employ
+{
+	
+	private int id;
+	private String ename;
+	private String job;
+	
+	
+	
+}
+public class EmployDemo {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.cts;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+/**
+ * Testing with TestRestTemplate and @Testcontainers (image mysql:8.0-debian)
+ */
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+// activate automatic startup and stop of containers
+@Testcontainers
+// JPA drop and create table, good for testing
+@TestPropertySource(properties = {"spring.jpa.hibernate.ddl-auto=create-drop"})
+
+public class BookControllerTest {
+
+}

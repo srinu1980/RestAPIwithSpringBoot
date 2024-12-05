@@ -1,0 +1,19 @@
+package com.cts.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.cts.model.User;
+
+public class UserServiceImpl implements UserService
+{
+
+	List<User> usersList=new ArrayList<User>();
+	
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		return usersList;
+	}
+
+}

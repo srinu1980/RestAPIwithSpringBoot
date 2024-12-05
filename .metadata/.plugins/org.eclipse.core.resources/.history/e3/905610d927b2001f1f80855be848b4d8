@@ -1,0 +1,12 @@
+package com.cts.model;
+
+public class Product
+{
+
+	private int id;
+	private String productName;
+	private int qty;
+	private double price;
+	
+	
+}

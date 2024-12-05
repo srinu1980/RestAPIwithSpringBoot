@@ -1,0 +1,20 @@
+package com.cts.exception;
+
+import java.sql.Date;
+
+import lombok.Data;
+
+
+public class ErrorDetails {
+
+	 private Date timestamp;
+	    private String message;
+	    private String details;
+		public ErrorDetails(java.util.Date date, String message, String details) {
+			super();
+			this.timestamp = date;
+			this.message = message;
+			this.details = details;
+		}
+
+}

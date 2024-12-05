@@ -1,0 +1,46 @@
+package com.cts.controller;
+
+import java.lang.reflect.Method;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import ch.qos.logback.core.joran.spi.HttpUtil.RequestMethod;
+
+//C => CREATE   R   => Retrival   U  => update D  => delete
+
+@RestController
+public class UserController
+{
+
+	@PostMapping("/user")
+	//@RequestMapping(value="/save",  Method=RequestMethod.POST)
+	public String createUser()
+	{
+		return "Save User Details";
+	}
+	
+	
+	@GetMapping("/users")
+	public String getAllUsers()
+	{
+		return "User details are Retrived...";
+	}
+	
+	@DeleteMapping("/user")
+	public String deleteUser()
+	{
+		return "User details are deleted...";
+	}
+	
+	@PutMapping("/user")
+	public String updateUser()
+	{
+		return "User details are updated....";
+	}
+	
+}
